@@ -41,7 +41,7 @@ require(['jquery'], function($){
 			if(flag){
 				users = JSON.parse(localStorage.getItem("Users"));
 				for(i=0; i<users.length; i++){
-					if(users[i].emailid==e && window.atob(users[i].password)==p){
+					if(users[i].emailid.toUpperCase()==e.toUpperCase() && window.atob(users[i].password)==p){
 						auth = true;
 					}
 				}
