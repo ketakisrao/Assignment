@@ -29,7 +29,7 @@ require(['jquery'], function($){
 			user.companynumber = cnum.val();
 			user.orgaddress = orgaddr.val();
 			var t = localStorage.getItem("Users");
-			if(t=="{}"){
+			if(t=="{}"||t==""||t==null){
 				u=[];
 				u[0] = user;
 
