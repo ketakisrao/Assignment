@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Management</title>
+	<link rel="Stylesheet" type="text/css" href="../myCss.css">
+	<script  data-main="add" src="require.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="login">
+			<div class="login-header">
+				User Details
+			</div>
+			<div class="userbody" id="userdetails">
+				<div class="row">
+					<input type="text" placeholder="First Name"><span class="tooltiptext">Alphabets</span>
+					<input type="text" placeholder="Last Name"><span class="tooltiptext">Alphabets</span>
+				</div>
+				<div class="row">
+					<input type="text" placeholder="Email Address"><span class="tooltiptext">Valid email id</span>
+					<input type="password" placeholder="Password"><span class="tooltiptext">Alphanumeric</span>
+				</div>
+				<div class="row">
+					<div class="login-buttons">
+						<div class="btn-sm">Next</div>
+					</div>
+				</div>
+			</div>
+			<div class="userbody" id="contactdetails" style="display: none;">
+				<div class="row">
+					<input type="text" placeholder="Mobile Phone">
+					<div class="tooltiptext">Numeric</div>
+					<input type="text" placeholder="Landline"><span class="tooltiptext">Numeric</span>
+				</div>
+				<div class="row">
+					<textarea rows="5" cols="50" placeholder="Postal Address"></textarea>
+				</div>
+				<div class="row">
+					<div class="login-buttons">
+						<div class="btn-sm">Prev</div>
+						<div class="btn-sm">Next</div>
+					</div>
+				</div>
+			</div>
+			<div class="userbody" id="companydetails" style="display:none;">
+				<div class="row">
+					<input type="text" placeholder="Organization Name"><span class="tooltiptext">Alphabets</span>
+					<input type="text" placeholder="Contact Number"><span class="tooltiptext">Numeric</span>
+				</div>
+				<div class="row">
+					<textarea rows="5" cols="50" placeholder="Org Postal Address"></textarea>
+				</div>
+				<div class="row">
+					<div class="login-buttons">
+						<div class="btn-sm">Prev</div>
+						<div class="btn-sm">Save</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

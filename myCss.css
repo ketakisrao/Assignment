@@ -1,0 +1,176 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Comic Sans MS";
+}
+body{
+	background-color : #ecf0f1;
+}
+.container{
+	height: 100%;
+	width: 100%;
+	min-height: 400px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+div#login{
+	height: 400px;
+	width: 350px;
+	display: inline-block;
+	background-color: white;
+	margin-top: 50px;
+	border-radius: 5px;
+}
+.login-header{
+	height: 35px;
+	background-color: #2980b9;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+}
+.login-body{
+	padding: 15px;
+}
+.userbody{
+	padding: 15px;
+}
+.login-buttons{
+	height: 50px;
+}
+.row{
+	display: block;
+}
+input{
+	height: 30px;
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #3498db;
+	border-radius: 3px;
+	text-align: center;
+}
+.tooltiptext{
+	visibility: hidden;
+	font-size: 12px;
+}
+input:focus + .tooltiptext{
+	visibility: visible;
+}
+textarea{
+	resize: none;
+	margin: 0 auto;
+	margin-top: 30px;
+	border: 1px solid #3498db;
+	border-radius: 3px;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+}
+.btn-sm{
+	display: inline-block;
+	width: 100px;
+	margin-top: 15px;
+	height: 30px;
+	background-color: #2980b9;
+	line-height: 30px;
+	border-radius: 3px;
+	padding: 0px 10px;
+	color: #fff;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.btn-sm:hover{
+	background-color: #3498db;
+}
+
+@media only screen and (min-width: 450px){
+	div#login{
+		width: 450px;
+	}
+	.userbody input{
+		display: inline;
+		width: 45%;
+		margin-left: 10px;
+	}
+	.login-buttons{
+		margin-top: 50px;
+	}
+	
+	.tooltiptext {
+	    visibility: hidden;
+	    width: 120px;
+	    background-color: black;
+	    color: #fff;
+	    text-align: center;
+	    border-radius: 6px;
+	    padding: 5px 0;
+
+	    /* Position the tooltip */
+	    position: absolute;
+	    z-index: 1;
+	}
+	input:focus + .tooltiptext{
+		visibility: visible;
+		display: inline;
+	}
+}
+
+
+//CSS for Dashboard
+
+ul li{
+	list-style-type: none;
+}
+li{
+	display: inline;
+}
+nav{
+	height: 50px;
+	background-color: #3498db;
+	line-height: 50px;
+}
+li a{
+	padding: 7px;
+}
+nav ul li:nth-child(4){
+	float: right;
+}
+li a:hover {
+	color: #ccc;
+}
+.table-wrapper{
+	overflow-x: scroll;
+}
+table{
+	width: 60%;
+	margin: 0 auto;
+}
+table, td, tr{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+th{
+	border: none;
+}
+th{
+	background-color: #3498db;
+}
+td, th{
+	text-align: center;
+	padding: 5px;
+	font-size: 14px;
+}
+tr{
+	background-color: #f2f2f2;
+}
+tr:nth-child(even){
+	background-color: #fff;
+}
+h2{
+	padding: 20px;
+}
+
+//css for add user
