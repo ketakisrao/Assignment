@@ -31,13 +31,13 @@ div#login{
 }
 .login-body{
 	padding: 15px;
-	padding-bottom: 25px;
 }
 .userbody{
 	padding: 15px;
 }
 .login-buttons{
 	height: 50px;
+	padding-bottom: 25px;
 }
 .row{
 	display: block;
