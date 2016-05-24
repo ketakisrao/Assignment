@@ -15,7 +15,6 @@ body{
 	text-align: center;
 }
 div#login{
-	height: 380px;
 	width: 350px;
 	display: inline-block;
 	background-color: white;
@@ -98,6 +97,7 @@ a{
 	}
 	.login-buttons{
 		margin-top: 10px;
+		padding-bottom: 25px;
 	}
 	input{
 		margin-top: 25px;
