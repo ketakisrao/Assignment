@@ -1,20 +1,5 @@
 require(['jquery'], function($){
 	$(document).ready(function(){
-		// var u = [];
-		// var user = {};
-		// user.fname = "John";
-		// user.lname = "Doe";
-		// user.emailid = "john.doe@gmail.com";
-		// user.orgname = "Infosys";
-		// u[0] = user;
-		// user = {};
-		// user.fname = "Ketaki";
-		// user.lname = "Rao";
-		// user.emailid = "john.doe@gmail.com";
-		// user.orgname = "Ketu";
-		// u[1] = user;
-		//localStorage.setItem("Users", JSON.stringify(u));
-		//console.log(JSON.parse(localStorage.getItem("Users")));
 		var email = /[A-Z0-9.]+@[A-Z0-9]+.[A-Z]{2,4}/i;
 		function validateDetails(){
 			var emailid = $('input[placeholder="Email Address"]');
@@ -51,6 +36,9 @@ require(['jquery'], function($){
 				else{
 					alert("Authentication Failed!");
 				}
+			}
+			else{
+				alert("Enter apropriate values");
 			}
 
 		}
