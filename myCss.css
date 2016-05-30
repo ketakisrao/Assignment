@@ -146,11 +146,11 @@ li a:hover {
 	color: #ccc;
 }
 .table-wrapper{
-	overflow-x: scroll;
 }
 table{
-	width: 60%;
+	table-layout: fixed;
 	margin: 0 auto;
+	width: 900px;
 }
 table, td, tr{
 	border: 1px solid #ccc;
@@ -163,9 +163,13 @@ th{
 	background-color: #3498db;
 }
 td, th{
+	overflow: hidden;
+	white-space: nowrap;
 	text-align: center;
 	padding: 5px;
 	font-size: 14px;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
 }
 tr{
 	background-color: #f2f2f2;

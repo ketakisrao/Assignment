@@ -1,9 +1,9 @@
 require(['jquery'], function($){
-	var alpha = /[a-z]/i;
-	var alphaspace = /[a-z ]/i;
-	var email = /[A-Z0-9.]+@[A-Z0-9]+.[A-Z]{2,4}/i;
+	var alpha = /^[a-z]*$/i;
+	var alphaspace = /^[a-z ]*$/i;
+	var email = /^[A-Z0-9._]*@[A-Z0-9]*\.[A-Z]{2,4}$/i;
 	var password = /[^a-z0-9]/i;
-	var num = /[0-9]/;
+	var num = /^[0-9]{6,10}$/;
 	var fname = $('input[placeholder="First Name"]');
 	var lname = $('input[placeholder="Last Name"]');
 	var emailid = $('input[placeholder="Email Address"]');
