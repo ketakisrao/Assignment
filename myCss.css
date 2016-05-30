@@ -157,9 +157,6 @@ table, td, tr{
 	border-collapse: collapse;
 }
 th{
-	border: none;
-}
-th{
 	background-color: #3498db;
 }
 td, th{
@@ -180,5 +177,26 @@ tr:nth-child(even){
 h2{
 	padding: 20px;
 }
-
-//css for add user
+@media only screen and (max-width: 500px){
+	table, td, tr, th{
+		display: block;
+		border: none;
+		text-align: justify;
+	}
+	table{
+		width: auto;
+	}
+	td{
+		overflow: hidden;
+	}
+	td:nth-of-type(1):before { content: "Sl No:  "; }
+	td:nth-of-type(2):before { content: "First Name:  "; }
+	td:nth-of-type(3):before { content: "Last Name:  "; }
+	td:nth-of-type(4):before { content: "Email:  "; }
+	td:nth-of-type(5):before { content: "Organization:  "; }
+	tr:first-child{
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	}
+}
